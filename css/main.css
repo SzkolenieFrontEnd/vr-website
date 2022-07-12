@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.innerWrapper {
+    width: 85%;
+    max-width: 1444px;
+    margin:0 auto;
+}
+
+.banner {
+  min-height: 100vh;
+  background-image: url('../images/desktop/image-hero.jpg');  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.bannerText {
+    border:2px solid #fff;
+    width: 50%;
+    padding:20px;
+}
+.bannerText > h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.pageHeader {
+   position: fixed; 
+   width: 100%;
+   padding: 20px 0;
+   z-index:100;
+}
+.pageHeader > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainMenu {
+    display: flex;
+    gap:15px;
+    list-style: none;
+}
+
+.mainMenu a {
+   color: rgb(252, 85, 85);
+   text-decoration: none;
+   font-size: 13px;
+}
+
+.aboutSection > div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin:80px auto;
+}
+.aboutImage {
+   width: 50%;
+   position: relative;
+   left: 50px;
+}
+.aboutText {
+    background-color: #fff;
+    padding: 50px;
+    color: rgb(78, 78, 78);
+    position: relative;
+    top:60px;
+    left:-120px;
+}
+.aboutText > h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+}
+.aboutText > p {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+.portfolioGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.portfolioGallery div {
+    width: 22%;
+    position: relative;
+}
+.portfolioGallery h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 26px;
+    width: 60%;
+    color: rgb(221, 220, 220);
+}
+
+.portfolioGallery img {
+    width:100%;
+}
+.portfolioTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;   
+}
+
+.portfolioTitle > button {
+    border: 2px solid grey;
+    width: 160px;
+    height: 30px;
+    background-color: transparent;
+}
+.portfolioTitle > button:active {
+    background-color: black;
+    color: #fff;
+}
+.portfolioTitle > h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;  
+}
+
+.pageFooter {
+    background-color: rgb(50, 50, 50);
+    padding: 25px 0;
+    margin-top: 25px;
+}
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.footerTop img {
+    width:120px;
+}
+.footerTop > div img {
+    width:20px;
+    margin-left:10px;
+}
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footerBottom > span {
+    font-size: 13px;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .aboutText {
+        position: initial;
+    }
+    .aboutSection > div {
+        flex-direction: column;
+    }
+    .aboutSection img {
+        width:85%;
+        position: initial;
+    }
+}
+
+@media (max-width:768px) {
+    .bannerText {
+        width:initial;
+        min-width: 50%;
+    }
+
+}
+
+
